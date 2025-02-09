@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Zasem Neupane</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Zasem</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/my_profile.png" alt="Zasem profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Zasem</h1>
+        <p class="section__text__p2">Freelance Graphic Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/zsm_cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/iamzasem/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/iamzasem'"
+          />
+
+          <img
+            src="./assets/insta.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://instagram.com/iamzasem'"
+          />
+
+          <img
+            src="./assets/twitter.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://x.com/iamzasem'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-profile.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Graphic Design</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>+2 / SEE<br />Bsc.CSIT</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I’m <b> Zasem Neupane , a freelance graphic designer, web developer, and DevOps enthusiast</b>.   I specialize in YouTube thumbnails, logos, marketing banners, and social media designs that stand out.
+              <br> <br>
+              With a background in web development and digital marketing, I create high-performing websites and help brands grow online. Currently, I’m pursuing <b>BSc CSIT at Shreeyantra College </b> and also work as a <b>German tutor at Crimson Consultancy</b>.
+              <br> <br>
+              <b>Let’s collaborate!</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+          <!-- Frontend Development -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          <!-- Backend & DevOps -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend & DevOps</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Express.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CI/CD</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          
+          <!-- Graphic Design & Digital Marketing -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Graphic Design & Digital Marketing</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SEO</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>SM Marketing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Adobe Photoshop</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- First 4 projects to show initially -->
+          <div class="projects-grid">
+            <!-- Project One -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-1.jpg" alt="Project 1" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+            <!-- Project Two -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-2.jpg" alt="Project 2" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+            <!-- Project Three -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-3.jpg" alt="Project 3" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+            <!-- Project Four -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-4.jpg" alt="Project 4" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Four</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Additional 4 projects (hidden initially) -->
+          <div class="projects-grid hidden">
+            <!-- Project Five -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-3.png" alt="Project 5" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Five</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+            <!-- Project Six -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-1.png" alt="Project 6" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Six</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+            <!-- Project Seven -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-2.png" alt="Project 7" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Seven</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+            <!-- Project Eight -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-3.png" alt="Project 8" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Eight</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- See More Button -->
+          <div class="see-more-container">
+            <button class="btn btn-color-2 project-btn" id="see-more-btn">See More</button>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    
+    
+    
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">neupanezasem@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/iamzasem/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Zasim Neupane. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
